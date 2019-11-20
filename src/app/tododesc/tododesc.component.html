@@ -1,0 +1,25 @@
+<div>
+    <div class="header-div">
+      <h1>ToDo List App</h1>
+      
+    </div>
+
+  
+   <div class="container" [formGroup]="tododesc" >
+      
+    <div >
+        <div > {{name}}</div>
+        <div>  <textarea rows="8" cols="55"  formControlName="text1" [(ngModel)]="des">  </textarea> </div>
+
+       </div>
+
+       <div style="margin: auto;"><button class="update-btn" (click)="saveDesc()">update</button></div>
+   </div>
+
+
+
+
+
+
+
+</div>

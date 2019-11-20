@@ -1,0 +1,44 @@
+<div>
+    <div class="header-div">
+      <h1>ToDo List App</h1>
+    </div>
+
+  
+    <div class="input-container">
+              <div class="input-div"> <input #todo name="todo" type="text" class="input-text"> </div>
+              <div class="btn-div">
+                
+                    <button (click)="addTodo(todo.value);clear()"  class="add-btn">
+                    <img style="width:45px;height:47px" src="../assets/btn.png">
+                    </button>
+
+              
+              </div>
+    </div>
+
+<!-- 
+        <div class="listtask-div" >
+          <li *ngFor = "let lis of listss">
+            {{lis.listitem}}
+          </li>
+              
+        </div> -->
+
+        <div class="listtask-div" *ngFor = "let lis of this.todoService.listss"  >
+          
+            <div class="left-div">
+              <input style="border:2px solid black;border-radius: 25px;height: 18px;width: 18px;" (click)="complete(lis.id)" type="checkbox">  
+              
+          <a [routerLink]="['/taskdesc', lis.id]" routerLinkActive="active">  {{lis.listitem}} </a>
+
+            </div>
+            <div class="right-div" style="margin: auto;"><button class="del-btn" (click)="deleteRow(lis.id)" style="background:transparent;"><img style="height:25px;width:25px;margin: auto;"src="assets/erase.png"> </button></div>
+          
+              
+        </div>
+
+
+
+
+
+</div>

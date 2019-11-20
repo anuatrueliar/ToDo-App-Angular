@@ -1,0 +1,33 @@
+
+.header-div{
+    
+    width: 40%;
+    background-color:	#A9A9A9;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    
+
+}
+.container{
+    padding-top: 10px;
+    width: 40%;
+    margin: auto;
+    border: 1px solid #A9A9A9;
+    display: flex;
+    margin-top: 10px;
+}
+
+.update-btn{
+    background-color:	#A9A9A9; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    padding: 32px 16px;
+}
